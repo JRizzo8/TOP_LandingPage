@@ -1,0 +1,170 @@
+/*setup css*/
+:root{
+    --dark-background-color: #1f2937;
+    --hero-main-header-logo-color: #f9faf8; 
+    --hero-secondary-header-link-color: #e5e7eb;
+    --info-header-text-color: #1f2937; /*also quote text color*/
+    --quote-background-color: #e5e7eb;
+    --button-cta-color: #3882f6;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'roboto', sans-serif;
+}
+/* header css */
+header, footer, .awesomeContainer{
+    background-color: var(--dark-background-color);
+}
+header{
+    padding: 1em 13em;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.headerLogo{
+    color: var(--hero-main-header-logo-color);
+    font-size: 24px;
+}
+.headerLinks{
+    color: var(--hero-secondary-header-link-color);
+    font-size: 18px;
+}
+.links{
+    list-style-type: none; 
+    display: flex;
+    gap: 1.5em;
+}
+a:link{
+    font-size: 18px;
+    color: var(--hero-secondary-header-link-color);
+    text-decoration: none;
+}
+/*hero section "website is awesome" css*/
+.awesomeContainer{
+    padding: 7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.awesomeContainer .awesomeLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.awesomeContainer .awesomeRight{
+    flex-shrink: 0;
+    width: 50%;
+}
+.greyBox{
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+    
+
+}
+button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer; 
+    width: 100px;
+    font-weight: 600;
+}
+
+/*random info section css*/
+.randomContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 13em;
+    margin-top: 3em;
+    
+}
+.randomHeader{
+    align-self: center;
+    justify-self: top;
+    font-size: 36px;
+    color: var(--info-header-text-color);
+    
+}
+.thingList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0 6em 0;
+}
+.infoBox{
+    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+.blueBox{
+    display: block;
+    width: 160px;
+    height:160px;
+    border: 4px solid blue;
+    border-radius: 20px;
+}
+/*quote section css */
+.quoteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--quote-background-color);
+    padding: 7em 13em;
+}
+.quoteText{
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--info-header-text-color)
+}
+.author{
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: var(--info-header-text-color);
+}
+/*cta section css*/
+.ctaContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em 13em;
+}
+.ctaBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--button-cta-color);
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+.ctaBtn{
+    border: 2px solid #fff;
+}
+/*footer css*/
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
