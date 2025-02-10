@@ -57,11 +57,21 @@ a:link{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+}
+.awesomeLeft h1{
+    color: var(--hero-main-header-logo-color);
+    font-weight: 900;
+    font-size: 48px;
+}
+.awesomeLeft p{
+    color: var(--hero-secondary-header-link-color);
+    font-size: 18px;
 }
 .awesomeContainer .awesomeRight{
     flex-shrink: 0;
     width: 50%;
+    font-size: 18px;
+    color: var(--hero-secondary-header-link-color);
 }
 .greyBox{
     display: flex;
